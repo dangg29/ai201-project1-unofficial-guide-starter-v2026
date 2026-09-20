@@ -23,24 +23,24 @@ names a target of "4 of 5", and four of three is not a thing.
 
 QUESTIONS = [
     {
-        "question": "How long can students add a course, and what happens if they drop it after the second week?",
-        "expects": "end of week six"
+        "question": "How long can students add or drop a course, and what happens if they drop after the second week?",
+        "expects": "W on your transcript"
     },
     {
-        "question": "What are the two writing intensive requirements for graduation?",
+        "question": "How does work study income affect financial aid compared with a regular campus job?",
+        "expects": "do count"
+    },
+    {
+        "question": "When do students normally declare a major, and is there any penalty for declaring late?",
+        "expects": "no penalty"
+    },
+    {
+        "question": "What are the requirements for the writing intensive courses needed for graduation?",
         "expects": "different departments"
     },
     {
-        "question": "What are the main reasons people visit Elder Ness, and when is the best time to go for birds?",
-        "expects": "April to May"
-    },
-    {
-        "question": "How often does the tram run in Marchwood on weekdays, and how much does a day ticket cost relative to single fares?",
-        "expects": "every 8 minutes"
-    },
-    {
-        "question": "When is laundry least busy in the dorms according to the student discussion?",
-        "expects": "Tuesday and Wednesday mornings"
+        "question": "How long does an interlibrary loan request usually take, and how many other institutions does the system cover?",
+        "expects": "eleven other institutions"
     },
 ]
 
