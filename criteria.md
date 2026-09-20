@@ -57,6 +57,8 @@ in at least 4 of 5 tries.
 
 ## 4. Something about your chunks
 
+At least 4 of 5 sampled chunks contain a complete thought, with no sentence cut off at the beginning or end.
+
 <!-- YOU WRITE THIS ONE.
 
      How would you know if your chunks were the right size? Name something
@@ -73,11 +75,13 @@ in at least 4 of 5 tries.
 
 **Why this target:**
 
-
+<!-- I chose 4 of 5 because a useful retrieval chunk should contain enough surrounding context to answer a question without including an entire document. I allow one imperfect chunk because some document boundaries may naturally produce shorter or incomplete sections. -->
 
 ---
 
 ## 5. Your choice
+
+For at least 4 of my 5 test questions, the source document named in the answer contains information that directly supports the answer.
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -90,7 +94,7 @@ in at least 4 of 5 tries.
 
 
 **Why this target:**
-
+<!-- I picked 4 of 5 because naming a source is not enough if the source does not actually support the answer. I allow one failure because retrieval may occasionally select a related document that contains useful context but not the exact information used in the answer. -->
 
 
 ---
