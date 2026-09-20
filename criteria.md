@@ -72,6 +72,7 @@ At least 4 of 5 sampled chunks should contain enough surrounding context to unde
 
 **Why this target:**
 Most campus life documents are short and focused on one topic, so paragraph based 1200 character chunks should usually be understandable on their own.
+
 ---
 
 ## 5. Your choice
