@@ -121,25 +121,34 @@ without reading what came before or after?
 
 **Question:**
 
+How long can students add or drop a course, and what happens if they drop after the second week?
+
 **Answer:**
 
-```
-```
+Students can add a course through the end of the second week, and they can drop a course through the end of week six. If they drop a course after the second week, it shows as a "W" on their transcript.
+
+Source: admin_add_drop_deadline.txt
 
 **My relevance cutoff:**
 
-<!-- The number you set in config.py, and how you got there.
-
-     You ran five questions your corpus covers and the five in OUT_OF_SCOPE
-     that it clearly doesn't, and wrote down the best distance for each. What
-     did those two groups look like? Where was the gap? Put the actual numbers
-     here — the table below wants all ten rows.
-
-     Milestone 4. -->
+I tested five questions covered by the campus life corpus and five questions that are clearly outside the corpus. Lower distance means the retrieved chunk is more similar to the question.
 
 | Question | In corpus? | Best distance |
-|---|---|---|
-|  |  |  |
+|---|---|---:|
+| How long can students add or drop a course, and what happens if they drop after the second week? | Yes | 0.253 |
+| How does work study income affect financial aid compared with a regular campus job? | Yes | 0.201 |
+| When do students normally declare a major, and is there any penalty for declaring late? | Yes | 0.158 |
+| What are the requirements for the writing intensive courses needed for graduation? | Yes | 0.257 |
+| How long does an interlibrary loan request usually take, and how many other institutions does the system cover? | Yes | 0.414 |
+
+
+| What is the capital of Mongolia? | No | 0.825 |
+| How do I change the oil in a diesel engine? | No | 0.934 |
+| Who won the 1994 World Cup? | No | 0.886 |
+| What is the recommended dosage of ibuprofen for a headache? | No | 0.844 |
+| How do I write a for loop in Rust? | No | 0.896 |
+
+The highest distance among the five in corpus questions was 0.414. The lowest distance among the five out of corpus questions was 0.825, leaving a clear gap between the two groups. I kept the relevance cutoff at 0.6 because it falls between these groups and separates all five in corpus questions from all five out of corpus questions in this test.
 
 ## How I Used AI
 
