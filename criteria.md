@@ -57,7 +57,7 @@ in at least 4 of 5 tries.
 
 ## 4. Something about your chunks
 
-At least 4 of 5 sampled chunks contain a complete thought, with no sentence cut off at the beginning or end.
+At least 4 of 5 sampled chunks should contain enough surrounding context to understand the main point without needing the previous or following chunk.
 
 <!-- YOU WRITE THIS ONE.
 
@@ -75,7 +75,7 @@ At least 4 of 5 sampled chunks contain a complete thought, with no sentence cut 
 
 **Why this target:**
 
-<!-- I chose 4 of 5 because a useful retrieval chunk should contain enough surrounding context to answer a question without including an entire document. I allow one imperfect chunk because some document boundaries may naturally produce shorter or incomplete sections. -->
+<!-- I chose 4 of 5 because most chunks should be independently understandable for retrieval to work well. I allow one exception because some information may naturally depend on context from a nearby section. -->
 
 ---
 

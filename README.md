@@ -1,6 +1,6 @@
 # The Unofficial Guide
 
-<!-- Replace this line with your name and which corpus you picked. -->
+Dang Nguyen — Campus Life corpus
 
 > **This file is your submission.** Fill it in as you go — most sections get
 > written during the milestone that produces them, not at the end.
@@ -21,11 +21,7 @@
 
 ## What This Does
 
-<!-- Three or four sentences. Which corpus you picked, and the kinds of
-     questions your system answers. Write it for someone who has never seen
-     this repo.
-
-     Milestone 5. -->
+This project is a question answering system built around a campus life corpus. It retrieves relevant pieces of campus information and uses them to answer questions about topics such as registration, financial aid, majors, graduation requirements, and campus resources. The system also checks whether a question is relevant to the corpus before generating an answer. If the corpus does not contain enough relevant information, the system refuses to answer instead of guessing.
 
 ## Chunking Strategy
 
@@ -140,8 +136,6 @@ I tested five questions covered by the campus life corpus and five questions tha
 | When do students normally declare a major, and is there any penalty for declaring late? | Yes | 0.158 |
 | What are the requirements for the writing intensive courses needed for graduation? | Yes | 0.257 |
 | How long does an interlibrary loan request usually take, and how many other institutions does the system cover? | Yes | 0.414 |
-
-
 | What is the capital of Mongolia? | No | 0.825 |
 | How do I change the oil in a diesel engine? | No | 0.934 |
 | Who won the 1994 World Cup? | No | 0.886 |
@@ -161,9 +155,11 @@ The highest distance among the five in corpus questions was 0.414. The lowest di
 
      Milestone 5. -->
 
-**1.**
+**1. Creating test questions**
+I used AI to help me come up with questions that could be answered from the campus life corpus. I used AI to help generate candidate questions from the campus life corpus, including some questions I selected randomly from different topics. I then checked the questions against the actual documents and used the ones that had clear answers in the corpus. I did the same with unrelated questions so I could test whether the relevance gate would reject questions that the corpus could not answer.
 
-**2.**
+**2. Understanding and changing chunking**
+I used AI to help me understand the starter chunking function, especially what the 800 character chunk size and 120 character overlap were doing. The starter approach uses fixed character windows, but after looking at my campus life documents, I decided that splitting at paragraph boundaries made more sense because many of the documents were already short and self contained. I changed the implementation to use a 1200 character maximum and no overlap, then reindexed the corpus and inspected the resulting chunks to make sure they could stand on their own.
 
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
