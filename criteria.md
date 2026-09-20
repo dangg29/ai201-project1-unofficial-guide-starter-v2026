@@ -23,8 +23,7 @@ For at least 4 of my 5 test questions, the retrieved chunks include one that
 contains the answer.
 
 **Why this target:**
-<!-- e.g. "One of my questions is about a topic only two documents mention, so
-     I expect that one to be hard." -->
+My five questions cover different campus topics, so I expect most to retrieve a chunk containing the needed information while allowing one harder case.
 
 ---
 
@@ -33,8 +32,7 @@ contains the answer.
 Every answer the system produces names at least one source document.
 
 **Why this target:**
-<!-- Why all five and not four? What about your setup makes that achievable —
-     or what would have to go wrong for it not to be? -->
+Every generated answer should be traceable to the corpus, and the source filename is already available with each retrieved chunk.
 
 ---
 
@@ -50,8 +48,7 @@ in at least 4 of 5 tries.
      just keep five of them, or the "4 of 5" above has nothing to be 4 of. -->
 
 **Why this target:**
-<!-- What did your distances look like when you set the cutoff in Milestone 4?
-     Was there a clean gap, or did the two groups overlap? -->
+The out of corpus questions are clearly unrelated to campus life, so I expect the relevance gate to reject most of them.
 
 ---
 
@@ -74,9 +71,7 @@ At least 4 of 5 sampled chunks should contain enough surrounding context to unde
 
 
 **Why this target:**
-
-<!-- I chose 4 of 5 because most chunks should be independently understandable for retrieval to work well. I allow one exception because some information may naturally depend on context from a nearby section. -->
-
+Most campus life documents are short and focused on one topic, so paragraph based 1200 character chunks should usually be understandable on their own.
 ---
 
 ## 5. Your choice
@@ -94,7 +89,7 @@ For at least 4 of my 5 test questions, the source document named in the answer c
 
 
 **Why this target:**
-<!-- I picked 4 of 5 because naming a source is not enough if the source does not actually support the answer. I allow one failure because retrieval may occasionally select a related document that contains useful context but not the exact information used in the answer. -->
+I want the named source to actually support the answer, not just be related to the question. One exception allows for an occasional retrieval mistake.
 
 
 ---
